@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Best man: Wilmer</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link  href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div class="hero">
+        <div class="btn-box">
+           <button id="btn1" onclick="openPAHINGA()"><i class="fa fa-heart"></i>PAHINGA</button>
+           <button id="btn2" onclick="openMITHI()"><i class="fa fa-user-graduate"></i>MITHI</button>
+           <button id="btn3" onclick="openTINATANGI()"><i class="fa fa-medal"></i>TINATANGI</button>
+        </div>
+        <div id="content1" class="content">
+            <div class="content-left">
+             <h1>BREATHE!</h1>
+             <p> Let me begin by praising you for all of your hard work and determination. Your dedication to your education and, at the same time, to our relationship has been admirable. You may be exhausted and anxious today and in the following days, but always remember that all of your hard effort will be rewarded. Always remember to breathe and rest, and to look after oneself. Put as much emphasis on your physical and mental well-being as you do on your activities. Take your time to breathe and relax. Always smile and begin each day with a positive attitude; don't allow the bad days get the better of you; always bring out the best in yourself. You can do it; all you have to do is breathe.</p>
+        </div>
+             <div class="content-right">
+             <img src="tired.PNG">
+           </div>
+        </div>
+        <div id="content2" class="content">
+            <div class="content-left">
+             <h1>PADAYON!</h1>
+             <p> You're nearly there; just keep doing and pursuing what you're passionate about, and everything will fall into place. I'm very proud of you for persevering in the face of adversity. Don't give up; keep pushing forward for the sake of your future and the future you hold. You may have no idea what may transpire to you in the near future, but I am confident that with all of your hard work and a solid foundation, you will be prosperous. I'll always be there for you till you achieve your ambitions and goals. Know that you're not alone on your ups and downs, and that I'm always here for you. I'm really proud of you; keep up the excellent effort, and you'll get there soon, Wilmer — Padayon!</p>
+        </div>
+             <div class="content-right">
+             <img src="happy.PNG">
+           </div>
+        </div>
+         <div id="content3" class="content">
+            <div class="content-left">
+             <h1>CONGRATS!</h1>
+             <p> Congratulations! Every task, endeavor, and obstacle you faced was completed admirably. I can't wait to see you receive your license and start living the life you've always desired. I can't wait to see you in that black toga we're both aspiring for, yet know that if you believe in yourself, you can do anything. Don't feel ashamed of your amazing abilities and skills. Don't give up, I know you can achieve it ;) You're a brilliant man with a lot of goals. Bring the bacon home with you,  Wilmer. I love you and wish you success.</p>
+        </div>
+             <div class="content-right">
+             <img src="final.PNG">
+           </div>
+        </div>
+    </div>
+    
+    <script>
+        var content1 = document.getElementById("content1")
+        var content2 = document.getElementById("content2")
+        var content3 = document.getElementById("content3")
+         var btn1 = document.getElementById("btn1")
+         var btn2 = document.getElementById("btn2")
+         var btn3 = document.getElementById("btn3")
+         
+         function openPAHINGA(){
+             content1.style.transform = "translateX(0)";
+             content2.style.transform = "translateX(100%)";
+             content3.style.transform = "translateX(100%)";
+             btn1.style.color = "#6495ED";
+             btn2.style.color = "#000";
+             btn3.style.color = "#000";
+             content1.style.transitionDelay = "0.3s";
+             content2.style.transitionDelay = "0s";
+             content3.style.transitionDelay = "0s";
+             
+         }
+        function openMITHI(){
+             content1.style.transform = "translateX(100%)";
+             content2.style.transform = "translateX(0)";
+             content3.style.transform = "translateX(100%)";
+             btn1.style.color = "#000";
+             btn2.style.color = "#6495ED";
+             btn3.style.color = "#000";
+             content1.style.transitionDelay = "0s";
+             content2.style.transitionDelay = "0.3s";
+             content3.style.transitionDelay = "0s";
+            
+         }
+        function openTINATANGI(){
+             content1.style.transform = "translateX(100%)";
+             content2.style.transform = "translateX(100%)";
+             content3.style.transform = "translateX(0)";
+             btn1.style.color = "#000";
+             btn2.style.color = "#000";
+             btn3.style.color = "#6495ED";
+             content1.style.transitionDelay = "0s";
+             content2.style.transitionDelay = "0s";
+             content3.style.transitionDelay = "0.3s";
+         }
+    </script>
+    
+</body>
+</html>
